@@ -4,8 +4,6 @@ Martian Manhunter's Proposal
 
 # Insight
 
----
-
 **Members:** Hernandez, Lat, Tamano
 
 **Section:** EQ3
