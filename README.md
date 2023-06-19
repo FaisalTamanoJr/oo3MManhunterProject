@@ -1,4 +1,10 @@
-# Martian Manhunter's Proposal
+Martian Manhunter's Proposal
+
+---
+
+# Insight
+
+---
 
 **Members:** Hernandez, Lat, Tamano
 
