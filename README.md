@@ -19,7 +19,5 @@ Insight is a program developed to help students become more productive and organ
     
 ## Features:
 - Study timer (Pomodoro, etc.)
-- Flashcards
 - To-do list
 - Notebook
-- Calendar
