@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.insight.SceneController">
+   <children>
+      <Text layoutX="816.0" layoutY="182.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Insight">
+         <font>
+            <Font name="System Bold Italic" size="96.0" />
+         </font>
+         <effect>
+            <DropShadow height="30.36" radius="14.68" spread="0.28" width="30.36" />
+         </effect>
+         <fill>
+            <LinearGradient endX="1.0" endY="0.6098485354221228" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.24666666984558105" blue="0.4000000059604645" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.20818713307380676" green="0.7546783685684204" blue="0.9368420839309692" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button layoutX="837.0" layoutY="404.0" mnemonicParsing="false" onAction="#SwitchToStudyTimer" prefHeight="72.0" prefWidth="268.0" text="Study Timer">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="837.0" layoutY="504.0" mnemonicParsing="false" onAction="#SwitchToToDoList" prefHeight="72.0" prefWidth="268.0" text="ToDo List">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="837.0" layoutY="603.0" mnemonicParsing="false" onAction="#SwitchToNotebook" prefHeight="72.0" prefWidth="268.0" text="Notebook">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="837.0" layoutY="708.0" mnemonicParsing="false" onAction="#Quit" prefHeight="72.0" prefWidth="268.0" text="Quit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
