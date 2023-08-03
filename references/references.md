@@ -13,3 +13,4 @@ Ruensuk, M. (2016). An implementation to reduce internal/external interruptions 
 
 Ward, N., & Tatsukawa, H. (2003). Software for taking notes in class. 33rd Annual Frontiers in Education, 2003. FIE 2003., 3, S2E_2-S2E_8. https://doi.org/10.1109/FIE.2003.1265956
 
+changes
