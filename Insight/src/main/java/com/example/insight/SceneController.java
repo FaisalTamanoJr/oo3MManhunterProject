@@ -7,7 +7,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -35,11 +34,14 @@ public class SceneController {
         stage.show();
     }
 
+    @FXML
     public void  SwitchToToDoList(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("ToDoList.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ToDoList.fxml"));
+        root = loader.load();
+        ToDoListController toDoListController = (ToDoListController) loader.getController();
+
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        stage.setTitle("Insight - ToDo List");
         stage.setScene(scene);
         stage.show();
     }

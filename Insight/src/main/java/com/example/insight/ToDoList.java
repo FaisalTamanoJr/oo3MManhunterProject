@@ -7,15 +7,15 @@ public class ToDoList {
     TaskDatabase database;
 
     public ToDoList(TaskDatabase database){
-        database = this.database;
+        this.database = database;
     }
 
     protected void addTask(String name, String taskType, String dayType, String dayTime) throws IOException {
         boolean accomplished = false;
-        Integer satisfactionRating = null;
+        Integer satisfactionRating = 0;
         name = '"' + name + '"';
         String taskString = name + "," + taskType + "," + dayType + "," + dayTime + "," + Boolean.toString(accomplished) + "," +
-                            Integer.toString(satisfactionRating);
+                            Integer.toString(satisfactionRating) + "\n";
         database.add(taskString);
     }
 

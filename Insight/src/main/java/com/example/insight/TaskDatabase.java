@@ -30,7 +30,7 @@ public class TaskDatabase {
                 tempTask.setDayType(task[2]);
                 tempTask.setDayTime(task[3]);
                 tempTask.setAccomplished(Boolean.parseBoolean(task[4]));
-                tempTask.setSatisfactionRating(Integer.valueOf(task[5]));
+                tempTask.setSatisfactionRating(Integer.parseInt(task[5]));
 
                 tasks.add(tempTask);
             }
@@ -75,7 +75,7 @@ public class TaskDatabase {
             boolean accomplished = tasksList.get(i).getAccomplished();
             Integer satisfactionRating = tasksList.get(i).getSatisfactionRating();
             taskString = name + "," + taskType + "," + dayType + "," + dayTime + "," + Boolean.toString(accomplished) + "," +
-                         Integer.toString(satisfactionRating);
+                         Integer.toString(satisfactionRating) + "\n";
             add(taskString);
         }
     }
